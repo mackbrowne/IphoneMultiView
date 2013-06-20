@@ -14,40 +14,33 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [super viewDidLoad];
-    CGRect viewRect = [[UIScreen mainScreen] bounds];
-    UIView *colorView = [[UIView alloc] initWithFrame:viewRect];
-    colorView.backgroundColor = [UIColor colorWithRed:255 green:102 blue:217 alpha:0.678];
-    self.view = colorView;
-    UIButton *firstButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    firstButton.frame = CGRectMake(100,100,100,44);
-    [firstButton setTitle:@"Button1" forState:UIControlStateNormal];
-    [firstButton setTitle:@"Clicked!" forState:UIControlStateHighlighted];
-    [firstButton addTarget:self action:@selector(changeBackgroundColor:)
-          forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:firstButton];
-    
-    UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 50, 300, 44)];
-    firstLabel.backgroundColor = [UIColor clearColor];
-    firstLabel.text = @"Hello welcome to my first app!";
-    [self.view addSubview:firstLabel];
-    
-	// Do any additional setup after loading the view, typically from a nib.
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = @"Favorites";
+        self.tabBarItem.image = [UIImage imageNamed:@"star"];
+    }
+    return self;
 }
 
-- (void)changeBackgroundColor: (id) selector;
+- (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor blueColor];
+    
+    [super viewDidLoad];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mollycat.jpg"]];
+    
+    imageView.contentMode = UIViewContentModeTop;
+    imageView.frame = self.view.frame;
+    
+    [self.view addSubview:imageView];
+    
+
+    self.view.backgroundColor = [UIColor purpleColor];
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
-/*
-- (void)touchesEnded:(NSSet *) touches withEvent:(UIEvent *) event
-{
-    //self.view.alpha = ((double)arc4random() / 0x100000000 );
-    NSLog(@"touched!");
-}
-*/
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

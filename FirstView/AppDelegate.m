@@ -10,6 +10,7 @@
 #import "FeedViewController.h"
 #import "ProfileViewController.h"
 #import "FavoritesViewController.h"
+#import "ViewController.h"
 
 
 @implementation AppDelegate

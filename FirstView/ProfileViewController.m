@@ -19,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Profile";
-        self.tabBarItem.image = [UIImage imageNamed:@"tab_icon_profile"];
+        self.tabBarItem.image = [UIImage imageNamed:@"gear"];
     }
     return self;
 }

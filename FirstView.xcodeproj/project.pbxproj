@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1CF3BA1772A0EC00D10931 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1CF3B71772A0EC00D10931 /* gear.png */; };
+		8D1CF3BB1772A0EC00D10931 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1CF3B81772A0EC00D10931 /* star.png */; };
+		8D1CF3BC1772A0EC00D10931 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1CF3B91772A0EC00D10931 /* book.png */; };
+		8D1CF3C21772A5F500D10931 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D1CF3C11772A5F500D10931 /* avatar.jpg */; };
+		8D1CF3C41772A67600D10931 /* mollycat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D1CF3C31772A67600D10931 /* mollycat.jpg */; };
 		8D5A08A9176AAB850020D830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A08A8176AAB850020D830 /* UIKit.framework */; };
 		8D5A08AB176AAB850020D830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A08AA176AAB850020D830 /* Foundation.framework */; };
 		8D5A08AD176AAB850020D830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A08AC176AAB850020D830 /* CoreGraphics.framework */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D1CF3B71772A0EC00D10931 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		8D1CF3B81772A0EC00D10931 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		8D1CF3B91772A0EC00D10931 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		8D1CF3C11772A5F500D10931 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		8D1CF3C31772A67600D10931 /* mollycat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mollycat.jpg; sourceTree = "<group>"; };
 		8D5A08A5176AAB850020D830 /* FirstView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5A08A8176AAB850020D830 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D5A08AA176AAB850020D830 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +105,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D1CF3B61772A0EC00D10931 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				8D1CF3B71772A0EC00D10931 /* gear.png */,
+				8D1CF3B81772A0EC00D10931 /* star.png */,
+				8D1CF3B91772A0EC00D10931 /* book.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		8D1CF3BE1772A1DF00D10931 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				8D1CF3C31772A67600D10931 /* mollycat.jpg */,
+				8D1CF3C11772A5F500D10931 /* avatar.jpg */,
+			);
+			path = backgrounds;
+			sourceTree = "<group>";
+		};
 		8D5A089C176AAB850020D830 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +157,8 @@
 		8D5A08AE176AAB850020D830 /* FirstView */ = {
 			isa = PBXGroup;
 			children = (
+				8D1CF3BE1772A1DF00D10931 /* backgrounds */,
+				8D1CF3B61772A0EC00D10931 /* icons */,
 				8D5A08B7176AAB850020D830 /* AppDelegate.h */,
 				8D5A08B8176AAB850020D830 /* AppDelegate.m */,
 				8DB3575D1772933C00DC3451 /* FeedViewController.h */,
@@ -255,6 +286,11 @@
 				8D5A08BF176AAB850020D830 /* Default-568h@2x.png in Resources */,
 				8D5A08C2176AAB850020D830 /* MainStoryboard_iPhone.storyboard in Resources */,
 				8D5A08C5176AAB850020D830 /* MainStoryboard_iPad.storyboard in Resources */,
+				8D1CF3BA1772A0EC00D10931 /* gear.png in Resources */,
+				8D1CF3BB1772A0EC00D10931 /* star.png in Resources */,
+				8D1CF3BC1772A0EC00D10931 /* book.png in Resources */,
+				8D1CF3C21772A5F500D10931 /* avatar.jpg in Resources */,
+				8D1CF3C41772A67600D10931 /* mollycat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

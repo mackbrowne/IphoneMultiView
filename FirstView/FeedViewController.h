@@ -10,4 +10,6 @@
 
 @interface FeedViewController : UIViewController
 
+@property(strong,nonatomic) UIScrollView *scrollView;
+
 @end
