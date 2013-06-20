@@ -27,7 +27,9 @@
 - (void)viewDidLoad
 {
     
+    
     [super viewDidLoad];
+    
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mollycat.jpg"]];
     
     imageView.contentMode = UIViewContentModeTop;

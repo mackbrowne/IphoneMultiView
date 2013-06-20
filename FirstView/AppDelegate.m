@@ -18,14 +18,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     UIViewController *feedViewController = [[FeedViewController alloc] init];
-
+    UINavigationController *feedViewNav = [[UINavigationController alloc] initWithRootViewController:feedViewController];
     
     UIViewController *favoritesViewController = [[FavoritesViewController alloc] init];
- 
+    UINavigationController *favoritesViewNav = [[UINavigationController alloc] initWithRootViewController:favoritesViewController];
+    
     UIViewController *profileViewController = [[ProfileViewController alloc] init];
+    UINavigationController *profileViewNav = [[UINavigationController alloc] initWithRootViewController:profileViewController];
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]];
+    [tabBarController setViewControllers:@[feedViewNav, profileViewNav, favoritesViewNav]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = tabBarController;

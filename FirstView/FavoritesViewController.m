@@ -7,6 +7,7 @@
 //
 
 #import "FavoritesViewController.h"
+#import "ViewController.h"
 
 @interface FavoritesViewController ()
 
@@ -27,8 +28,23 @@
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor purpleColor];
+    
+    UIButton *catButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [catButton setImage:[UIImage imageNamed:@"mollycat.jpg"] forState:UIControlStateNormal];
+    [catButton setImage:[UIImage imageNamed:@"hmollycat.jpg"] forState:UIControlStateHighlighted];
+    catButton.frame = CGRectMake(15, 15, 200, 189);
+    
+    [self.view addSubview:catButton];
+    [catButton addTarget:self action:@selector(showCatPage:) forControlEvents:UIControlEventTouchUpInside];
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+- (void) showCatPage: (UIButton *) sender
+{
+    
+    self.view.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning
